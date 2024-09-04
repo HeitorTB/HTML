@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport">
+        <!-- Escrever na tela completa -->
+        <title>Minha página</title>
+    </head>
+    <body>
+        <h1>Meus estudos back end</h1>
+        <hr>
+        <!-- Põe uma linha entre as coisas -->
+        <p>Estudos do curso em vídeo gustavo guanabara <br>Lógica e introdução ao HTML</p>
+        <!-- br= quebra de linha -->
+        <hr>
+        <p>Site para ajustar imagem e obter uma cor específica: GIMP <br> Site para ajustar vídeo: Hand Brake <br> Site para localizar imagens e vídeos: Pexels</p>
+        <p><a href="https://youtu.be/E01LDVj0Rpg?si=sEUnUPutj-hlVhcL">Vídeo de imagens dinâmicas</a></p>
+        
+        <h2>Caracteres especiais:</h2>
+        <p>&euro;<br>&reg;<br>&copy;<br>&trade;<br>&uparrow;</p>
+        <p>euro(moeda), reg\copy\trade(marcas registradas), uparrow(seta pra cima)</p>
+       
+        <h2> emojis:</h2>
+        <p>&#x2764;</p>
+        <p>emojipedia</p>
+       
+        <h2> Termo em negrito:<b>Heitor</b> </h2>
+        <p>tag b deixa em negrito sem o css / tag strong </p>
+       
+        <h2> Termo em itálico:<i>Heitor</i> </h2>
+        <p> <i>Heitor brasil tem olhos castanhos</i> </p>
+        <p>Tag i deixa em itálico sem o css</p>
+        <p>ctrl/shift/p (abb+tag)</p>
+
+        <h2> Termo marcado: <mark>Heitor</mark></h2>
+        <p> usando ctrl + shift + p + tag mark </p>
+
+        <h2> Termo marcado em outra cor: <mark style="background-color: aqua;">Heitor</mark> </h2>
+        <p>Mark style + background-color + termo em destaque</p>
+
+        <h2>Atribuir uma palavra <big>grande</big></h2>
+        <p>Colocar entre as tags big</p>
+       
+        <h2>Atribuir uma palavra <small>pequena</small></h2>
+        <p>Colovar entre as tags small</p>
+
+        <h2> Sublinhado: <ins>Sublinhado</ins> </h2>
+        <p>tag ins: semântica / tag u: não semântica</p>
+        
+        <h2>Texto sobrescrito: x<sup>20</sup>+10 </h2>
+        <p>Coloca entre as tags sup </p>
+
+        <h2>Texto subescrito: H<sub>2</sub>O </h2>
+        <p>Coloca entre as tags sub </p>
+
+        <h2>Letras de códigos(código fonte): <code>print hellow world</code> </h2>
+        <p>Coloca entre as tags code </p>
+
+        <h2>Código no formato original:</h2>
+        <pre>
+            <code>
+                if 2>3:
+                    print ("está correto")
+                else:
+                    print ('está errado')
+            </code>
+        </pre>
+        <p> Colocar tag code entre a tag: pre </p>
+
+        <h2>Colocar citações: <q>sei que nada sei</q> </h2>
+        <p>O programa coloca as àspas</p>
+        <p>Colocar entre a tag: q(quote)</p>
+
+        <h2>Citação completa</h2>
+        <blockquote>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iusto
+            laborum magni velit maxime suscipit molestiae dolores totam iste explicabo
+        </blockquote>
+        <p>Colocar entre as tags blockquote</p>
+        
+        <h2> Citação completa com referência</h2>
+        <blockquote cite="link de onde veio">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iusto
+            laborum magni velit maxime suscipit molestiae dolores totam iste explicabo
+        </blockquote>
+        <strong> 
+            <p>Coloca depois da primeira tag blockquote o: cite='link'</p>
+            <p>Serve para direitos autorais</p>
+        </strong>
+
+        <h2>Abreviações: <abbr title="Hyper Text MArkup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></h2>
+        <p>Colocar entre as tags abbr e no title o sig </p>
+
+        <h2>Texto invertido=<bdo dir="rtl">Texto invertido</bdo></h2>
+        <p>Colocar entre as tags bdo e rtl(rigth to left) ou ltr(left to right)</p>
+
+        <h2>Address</h2>
+        <p>Serve para colocar o endereço no site</p>
+        
+        <h2>Listas ordernadas</h2>
+        <ol>
+            <li>Passar shampoo</li>
+            <li>Passar condicionador</li>
+            <li>Passar creme</li>
+        </ol>
+        <p>Coloca entre as tags ol e li</p>
+        <strong>
+            <p>Também tem a opção de colocar type pós ol <br> O type define o tipo de lista (ex:de 1 a 3)</p>
+        </strong>
+
+        <h2>Listas desordenadas</h2>
+        <ul type="square">
+            <li>Viajar pra frança</li>
+            <li>Viajar pra itália</li>
+            <li>Viajar pra espanha</li>
+        </ul>
+        <p>Coloca entre as tags ul e li</p>
+        <strong>
+            <p>Também tem a opção de colocar type pós ul <br> O type define o ícone antes dos itens</p>
+            <p>Tem as opções circle, disc e square</p>
+        </strong>
+
+        <h2>Lista de definições</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de código para criação de site</dd>
+        </dl>
+        <p>Colocar tudo entre as tags dl(lista)--dt(termo)--dd(definição)</p>
+
+        <h2>Links externos</h2>
+        <p>Para acessar meu <a href="https://www.instagram.com/_heitortbr/">instagram</a></p>
+        <p>colocar a palavra entre as tags: a / colocar o link no href</p>
+
+        <h2>Link externo em nova pág</h2>
+        <p>Para acessar meu <a href="https://www.instagram.com/_heitortbr/" target="_blank" rel="external">instagram</a></p>
+        <p>Colocar depois do link: <strong>target='_blank' e rel='external'</strong> </p>
+        <p> Abre o instagram numa nova página, sem sobressair a do seu site </p>
+        
+        <h2>Links para dowload</h2>
+        <p><a href="pdf ex.pdf" download="pdf ex" type="application/pdf">Dowload do pdf</a></p>
+        <ol type="1">
+            <li>Colocar entre as tags a para transformar num link</li>
+            <li>Dar ctrl + espaço e selecionar o arquivo no href</li>
+            <li>Escrever dowload='nome do arquivo'</li>
+            <li>Colocar o tipo do arquivo encontrado em: <strong>iana.org</strong></li>
+        </ol>
+
+        <h2>Colocar áudio no site </h2>
+        <audio preload="metadata" autoplay controls >
+            <source src="minha musica.mp3" type="audio/mpeg">
+            <source src="minha musica.ogg" type="audio/ogg">
+            <source src="minha musica.wav" type="audio/wav">
+            <p>Infelizmente seu navegador não consegue reproduzir áudio</p>
+        </audio>
+        <ol type="1">
+            <li>Baixar o audio na pasta do vs</li>
+            <li>Colocar as tags audio</li>
+            <li>Colocar depois da primeira tag audio o preload: metadata e o<strong> autoplay controls</strong> </li>
+            <li>Colocar fora das tags source src + arquivo + type (audio/<mark>type</mark>)</li>
+            <ol type="1">
+                <li>mp3</li>
+                <li>ogg</li>
+                <li>wav</li>
+            </ol>
+        </ol>
+        <h2>Inserindo vídeos do youtube </h2>
+        <strong>
+            <p>Inserir vídeos do youtube são bons para otimizar o uso de dados no seu site <br> Além de facilitar o trabalho para coloca-lo </p>
+        </strong>  
+            <p>Basta ir na área de compartilhar o video e copiar o código em: incorporar </p>
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/jADMDwD9808?si=pwuSF1g9xtC7tXXC" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy=
+            "strict-origin-when-cross-origin" allowfullscreen></iframe>
+       
+    </body>
+</html> 
