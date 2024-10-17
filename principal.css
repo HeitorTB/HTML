@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(227, 247, 247);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    color:darkblue;
+    background-color:aliceblue;
+}
+
+h2 { 
+    color: red;
+}
+
+p {
+    text-align: justify;
+}
+h3{
+    color: black
+}
+
