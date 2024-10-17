@@ -173,6 +173,104 @@
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
             encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy=
             "strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <h2>Tabelas</h2>
+        <p>A tag principal de abetura de tudo de dentro da tabela é <strong>table</strong></p>
+        <p>O <strong>tr</strong> representa os elementos (representados por <strong> td </strong>) dentro da linha horizontal</p>
+        <p>Com <strong>text align center e vertical align middle</strong>, consegue centralizar o conteudo da tabela</p>
+        <p>---------------------</p>
+        <p>No css colocar a borda (border) e a função: <strong>border colapse</strong>: colapse, para unir as linhas</p>
+        <p>As tabelas são divididas em: <strong>thead, tbody e tfoot (conclusão) </strong></p>
+        <p><strong>TR</strong>: Cada linha horizontal de assunto, <strong>TD</strong>: Os elementos dentro do tr, <strong>TH</strong>: elementos títulos</p>
+        <p>---------------------</p>
+        <p><strong>Caption:</strong> Título da tabela </p>    
+        <p><strong>th scope row</strong>: elementos referidos estão na mesma linha horizontal (so utilizar em th)</p>
+        <p><strong>th scope col</strong>: elementos referidos estão na mesma coluna vertical (so utilizar em th) </p>
+        <p>Tem como fazer um efeito zebrado na tabela: <strong>tbody > tr:nth-child(2n)</strong>{determinado background color</p>
+        <p>2n: de duas em 2 linhas</p>
+        <p>---------------------</p>
+        <p><strong>colspan: mesclar colunas</strong></p>
+        <p><strong>rowspan: mesclar linhas</strong></p>
+        <p>Exemplo: td rowspan='3' </p>
+        <p><strong>Editar colunas específicas:</strong> dentro de table criar um colgroup com varias 'col' dentro, cada uma representando uma coluna da tabela </p>
+        <p>
+            <code>
+            <pre>
+                colgroup
+                    col class="coluna 1">
+                    col class="coluna 2">
+                    col class="coluna 3">
+                /colgroup
+            </pre>
+        </code>
+        </p>
+        <p>Responsividade: Colocar toda a tabela dentro de um div e no css pôr dentro da div o <strong>overflow-x: auto</strong></p>
+
+        <h2>IFRAME</h2>
+        <p><strong>Tag: iframe</strong></p>
+        <p>Dentro do src colocar o link da página para que apareça o frame do site</p>
+        <p>Coloque o link do lado de fora do src também, para que caso nao abra o frame, mostre o link</p>
+    
+        <code>
+        <pre>
+        iframe src="link da pag" frameborder="0"> link da pag <\iframe>
+        </pre>
+        </code>
+        <p>Frameborder='1' (com borda)</p>
+        <p>Frameborder='0' (sem borda)</p>
+    
+        <p>-----------------------------</p>  
+        <p>É possível colocar páginas internas do seu site no próprio iframe </p>
+        <p><strong>Abrir um iframe específico na tela ao clicar no link:</strong></p>
+        <ol>
+            <li>Cria um menu com diferentes páginas internas(link)</li>
+            <li>Cria um iframe e define um --name--</li>
+            <li>Coloca o name do iframe no target dos links do menu</li>
+        </ol>
+        <p><strong>Problema:</strong> O iframe enquanto não é escolhido fica em branco</p>
+        <p><strong>Resolução:</strong> Colocar no lugar do src do iframe um srcdoc, e escrever algo dentro com html.</p>
+        <p><strong>Opções de uso:</strong></p>
+        <ol>
+            <li>Vídeos do youtube</li>
+            <li>Google Maps (compartilhar--opção html)</li>
+            <li>Mapas do Waze </li>
+            <li>Google Docs/apresentações (arquivo--publicar na web)</li>
+        </ol>
+
+        <h2>Formulários</h2>
+        <p><strong>Tag: Form</strong></p>
+        <p>Com a <strong>tag input</strong> cria-se as caixinhas de escrita</p>
+        <p>Com a <strong>tag input type:submit</strong>, cria-se o botão de enviar</p>
+        <p>Estrutura de um input: input type='', name='', id=''</p>
+        <p>Após criar a tag form, colocar dentro o action:banco de dados</p>
+        <p><strong>Action: A tag action serve para anexar os dados após clicar no submit, a uma linguagem de banco de dados</strong></p>
+        <p>-----------------------------</p>
+        <p>Sempre quando for uma caixa de texto, anexar o conteúdo numa <strong>tag label</strong></p>
+        <p>Dentro do label terá um for, nele será colocado o id do input</p>
+        <p><strong>Exemplo:</strong></p>
+        <p><code>
+        <pre>
+            form
+            p> label for='inome'> Nome: <\label 
+            input type='text' name='nome' id='inome'<\p
+            /form 
+        </pre>
+        </code>
+        </p>
+        <p><mark>Existem dois métodos de formulários:</mark></p>
+        <ol>
+            <li><abbr title="Usar para coisas não sigilosas"><strong>Get</strong></abbr>: coloca o que foi inserido na url. Caso nao tenha sido escolhido o método, esse é o padrão</li>
+            <li><abbr title="Coisas Sigilosas"><strong>Post</strong></abbr>: Não aparece na url, mas dá pra acessar com o inspecionar</li>
+        </ol>
+        <p>--- Formulários get são compartilhaveis, formulários post não.</p>
+        <p>--- Usar o post com dados de grande porte, coisas sigilosas e envio de arquivos como fotos</p>
+        <p>-----------------------------</p>
+        <p>Colocar junto com o input o <strong>required</strong>, que serve para dar uma alerta para preencher o campo</p>
+        <p><strong>Definir minimo:</strong> usar depois do required o min-length=''</p>
+        <p><strong>Definir máximo:</strong> usar depois do required o max-length=''</p>
+        <p><strong>Tag Placehoder: </strong>Serve para colocar uma indicação, colocado pós input</p>
+
+        
        
     </body>
 </html> 
